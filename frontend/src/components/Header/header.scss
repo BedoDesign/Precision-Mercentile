@@ -5,9 +5,14 @@
     position: relative;
     overflow: hidden;
     margin: 35px 62px 35px 62px;
-    background: url('pre1.jpeg') no-repeat;
     background-size: cover;
     height: 400px;
+
+    .home-img {
+        position: absolute;
+        object-fit: contain;
+
+    }
 
     .text-1 {
         z-index: 1;

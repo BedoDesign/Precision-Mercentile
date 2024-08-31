@@ -5,9 +5,13 @@
   position: relative;
   overflow: hidden;
   margin: 35px 62px 35px 62px;
-  background: url("pre1.jpeg") no-repeat;
   background-size: cover;
   height: 400px;
+}
+
+.home-banner .home-img {
+  position: absolute;
+  object-fit: contain;
 }
 
 .home-banner .text-1 {
