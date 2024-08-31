@@ -1,0 +1,27 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 4%;
+
+
+    .icon-head {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .logo {
+            height: 50px;
+            margin-right: 20px;
+        }
+
+        .icon-header {
+            font-size: 1rem
+        }
+    }
+
+
+    .profile {
+        height: 40px;
+    }
+}
