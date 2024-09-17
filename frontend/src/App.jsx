@@ -10,6 +10,9 @@ import { useState } from 'react'
 import LoginPopup from './components/LoginPopup/LoginPopup'
 import Verify from './pages/Verify/Verify'
 import MyOrders from './pages/MyOrders/MyOrders'
+import Contact from './pages/Contact/Contact'
+import ProductDisplay from './components/ProducDisplay/ProductDisplay'
+import ProductDetails from './components/ProductDetails/ProductDetails'
 
 const App = () => {
 
@@ -26,6 +29,15 @@ const App = () => {
           <Route path='/PlaceOrder' element={<PlaceOrder />}></Route>
           <Route path='/Verify' element={<Verify />}></Route>
           <Route path='/MyOrders' element={<MyOrders />}></Route>
+          <Route path='/Contact' element={<Contact />}></Route>
+          <Route path="/" element={<ProductDisplay category="All" />} />
+          <Route path="/aromatic" element={<ProductDisplay category="Aromatic" />} />
+          <Route path="/dustbin" element={<ProductDisplay category="Dustbin" />} />
+          <Route path="/cleaning" element={<ProductDisplay category="Cleaning" />} />
+          <Route path="/other-appliances" element={<ProductDisplay category="Other Appliances" />} />
+
+          <Route path="/category/:category" element={<ProductDisplay />} />
+          <Route path="/product/:id" element={<ProductDetails />} /> {/* New dynamic product route */}
         </Routes>
         <Footer />
       </div>

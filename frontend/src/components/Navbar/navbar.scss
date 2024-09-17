@@ -217,6 +217,22 @@
 
                     .nav-item {
                         margin: 10px;
+
+                        .profile-image {
+                            &:hover {
+                                .nav-profile-dropdown {
+                                    margin: -50px 50px 0px 0px;
+                                }
+
+                            }
+
+                        }
+                    }
+
+                    .nav-item-cart {
+                        display: flex;
+                        justify-content: flex-start;
+
                     }
                 }
             }
@@ -243,10 +259,52 @@
 
                     .nav-item {
                         margin: 10px;
+
+                        .profile-image {
+                            &:hover {
+                                .nav-profile-dropdown {
+                                    margin: -50px 50px 0px 0px;
+                                }
+
+                            }
+
+                        }
+                    }
+
+                    .nav-item-cart {
+                        display: flex;
+                        justify-content: flex-start;
+
                     }
                 }
             }
 
         }
     }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1239px) {
+    .navbar {
+        position: relative;
+
+        .container-fluid {
+            .navbar-brand {
+                margin: 0 0 0 30px;
+            }
+
+            .collapse {
+                .navbar-nav {
+
+                    margin: 0px 0px 0px 100px;
+
+
+                    .nav-item {
+                        margin: 10px;
+                    }
+                }
+            }
+
+        }
+    }
+
 }

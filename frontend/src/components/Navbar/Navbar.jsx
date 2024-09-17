@@ -49,8 +49,18 @@ const Navbar = ({ setShowLogin }) => {
                                     Services
                                 </a>
                                 <ul className="dropdown-menu">
-                                    <li><a className="dropdown-item" href="/Bread">Industrial</a></li>
-                                    <li><a className="dropdown-item" href="/Pastery">Household</a></li>
+                                    <li>
+                                        <Link to="/aromatic" className="dropdown-item">Aromatic</Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/dustbin" className="dropdown-item">Dustbin</Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/cleaning" className="dropdown-item">Cleaning</Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/other-appliances" className="dropdown-item">Other Appliances</Link>
+                                    </li>
                                 </ul>
                             </li>
 

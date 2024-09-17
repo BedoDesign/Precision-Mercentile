@@ -5,6 +5,7 @@
   box-shadow: 0px 0px 10px "#00000015";
   transition: 0.3s;
   border-radius: 15px;
+  overflow: hidden;
   border: 1px solid #b4b3b3;
   animation: fadeIn 1s;
 }
@@ -21,6 +22,11 @@
   width: 100%;
   object-fit: contain;
   overflow: hidden;
+  transition: transform 0.6s ease;
+}
+
+.product-item .product-item-img:hover {
+  transform: scale(1.1);
 }
 
 .product-item .product-item-info {

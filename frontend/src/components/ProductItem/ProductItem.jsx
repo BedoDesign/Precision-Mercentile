@@ -1,4 +1,6 @@
 import React, { useContext } from 'react'
+import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { FaStar, FaStarHalf } from "react-icons/fa";
 import { MdCurrencyRupee } from "react-icons/md";
 import '../ProductItem/productitem.css'
@@ -7,12 +9,20 @@ import { StoreContext } from '../../context/StoreContext';
 
 const ProductItem = ({ id, name, image, price, desc_1, desc_2 }) => {
 
-    const { cartItems, addToCart, removeFromCart, url } = useContext(StoreContext)
+    const { cartItems, addToCart, removeFromCart, url } = useContext(StoreContext);
+    const navigate = useNavigate();
+
+    const handleClick = () => {
+        navigate(`/${category.toLowerCase()}`);
+    };
+
 
     return (
-        <div className='product-item' >
+        <div className='product-item' onClick={handleClick}>
+            <Link to={`/product/${id}`}>
+                <img className="product-item-img" src={url + "/images/" + image} alt="" />
+            </Link>
 
-            <img className="product-item-img" src={url + "/images/" + image} alt="" />
 
             <div className="product-item-info">
                 <div className="product-section-1">
